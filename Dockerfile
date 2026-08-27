@@ -1,11 +1,11 @@
-FROM python:3.10-slim
+FROM python:3.10-slim-bookworm
 
 WORKDIR /app
 
 COPY . /app
 
 RUN apt-get update && \
-    apt-get install -y awscli && \
+    apt-get install -y --no-install-recommends awscli && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip install --no-cache-dir -r requirements.txt
