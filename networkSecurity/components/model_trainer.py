@@ -29,9 +29,7 @@ from urllib.parse import urlparse
 import dagshub
 dagshub.init(repo_owner='realadityagupta', repo_name='NIDS_with_Automated_MLOPS_pipeline', mlflow=True)
 
-# os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/pranayp.kadu/networksecurity.mlflow"
-# os.environ["MLFLOW_TRACKING_USERNAME"]="pranayp.kadu"
-# os.environ["MLFLOW_TRACKING_PASSWORD"]="9c473d7271b39e281bf0c16e60037d579d74b622"
+
 
 
 
